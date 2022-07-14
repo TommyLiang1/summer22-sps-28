@@ -1,29 +1,149 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>TEAM-23 PROJECT</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <header>
-      <div class="navbar">
-        <a href="#">TITLE</a>
-        <a href="#">HOME</a>
-        <a href="#">LINK2</a>
-        <a href="#">LINK3</a>
-        <div class="search-container">
-          <form action="#">
-            <input type="text" placeholder="Search.." name="search" />
-            <button type="submit"><i class="fa fa-search"></i></button>
-          </form>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="#abouta" id="about">About</a>
+        <a href="#gallerya" id="gallery">Gallery</a>
+        <a href="#projectsa" id="projects">Projects</a>
+        <a href="#contacta" id="contact">Contact</a>
+    </div>
+
+    <div id="abouta">
+        <div class="about-item">
+            <img src="https://images.fineartamerica.com/images/artistlogos/james-mccarthy-1397867296-square.jpg"
+                style="width:250px; height:250px;">
+            <div id="name">James McCarthy</div>
+            <div id="logos">
+                <img src="imgs/tt-logo.png" class="logo">
+                <img src="imgs/fb-logo.png" class="logo">
+                <img src="imgs/ig-logo.png" class="logo">
+            </div>
         </div>
-      </div>
-    </header>
-  </body>
+        <div id="text-container" class="about-item">
+            <div class="sentence">
+                I am originally from Kalamazoo, Michigan. I was born in 1956. I was the first generation of TV kids. I liked
+                science
+                fiction and fantasy. I still do. I also liked to draw. I still do.
+            </div>
+            <div class="sentence">
+                Another thing they had in Michigan were seasons. I loved the seasons, especially the cold and weird beauty
+                of Winter.
+            </div>
+            <div class="sentence">
+                My family moved to Florida in 1965 where (aside from several trips to Michigan, Arkansas, Pennsylvania and
+                New England)
+                I have remained ever since. I miss the seasons, especially Winter snow.
+            </div>
+            <div class="sentence">
+                As a teenager I really grew to love music. Especially music that forms landscapes inside your head, such as
+                prog rock,
+                classical, medieval music and later in the '90's as an adult, new age music. Music is my primary source of
+                inspiration
+                when I conjure up ideas for my drawings and paintings.
+            </div>
+            <div class="sentence">
+                My theme is Surrealism and the Landscape. I like to create surreal biomorphic images but depicting the
+                landscape along
+                with the seasons is important to me as well.
+            </div>
+        </div>
+    </div>
+
+    <div id="gallerya">
+        <p1>Gallery</p1>
+        <div class="row">
+            <div class="column">
+                <img class="ImgThumbnail"
+                    src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/sunshower-james-mccarthy.jpg"
+                    style="width:100%" onclick="currentDiv(1)">
+                <img class="ImgThumbnail"
+                    src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/through-the-afterlife-james-mccarthy.jpg"
+                    style="width:100%" onclick="currentDiv(2)">
+                <img class="ImgThumbnail"
+                    src="https://render.fineartamerica.com/images/images-profile-flow/400/images-medium-large-5/the-garden-in-the-valley-of-the-stars-james-mccarthy.jpg"
+                    style="width:100%" onclick="currentDiv(3)">
+                <img class="ImgThumbnail"
+                    src="https://render.fineartamerica.com/images/images-profile-flow/400/images-medium-large-5/in-the-court-of-the-crimson-king-james-mccarthy.jpg"
+                    style="width:100%" onclick="currentDiv(4)">
+                <img class="ImgThumbnail"
+                    src="https://render.fineartamerica.com/images/images-profile-flow/400/images-medium-large-5/moonchild-ii-james-mccarthy.jpg"
+                    style="width:100%" onclick="currentDiv(5)">
+            </div>
+            <div class="column">
+                <img class="ImgThumbnail"
+                    src="https://render.fineartamerica.com/images/images-profile-flow/400/images-medium-large-5/5-stars-and-snow-james-mccarthy.jpg"
+                    style="width:100%" onclick="currentDiv(6)">
+                <img class="ImgThumbnail"
+                    src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/nursery-james-mccarthy.jpg"
+                    style="width:100%" onclick="currentDiv(7)">
+                <img class="ImgThumbnail"
+                    src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/heart-of-the-sunset-with-lost-father-james-mccarthy.jpg"
+                    style="width:100%" onclick="currentDiv(8)">
+                <img class="ImgThumbnail"
+                    src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/heart-of-the-sunrise-with-lost-dreamer-james-mccarthy.jpg"
+                    style="width:100%" onclick="currentDiv(9)">
+                <img class="ImgThumbnail"
+                    src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/south-side-of-the-sky-james-mccarthy.jpg"
+                    style="width:100%" onclick="currentDiv(10)">
+            </div>
+            <div class="column">
+                <img class="ImgThumbnail"
+                    src="https://render.fineartamerica.com/images/images-profile-flow/400/images-medium-large/close-to-the-edge-seasons-will-pass-you-by-james-mccarthy.jpg"
+                    style="width:100%" onclick="currentDiv(11)">
+                <img class="ImgThumbnail"
+                    src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/dawn-in-the-garden-of-creation-james-mccarthy.jpg"
+                    style="width:100%" onclick="currentDiv(12)">
+                <img class="ImgThumbnail"
+                    src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/the-piper-at-the-gates-of-dawn-james-mccarthy.jpg"
+                    style="width:100%" onclick="currentDiv(13)">
+            </div>
+            <div class="column">
+                <img class="ImgThumbnail"
+                    src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/shadow-box-and-surroundings-james-mccarthy.jpg"
+                    style="width:100%" onclick="currentDiv(14)">
+                <img class="ImgThumbnail"
+                    src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/death-james-mccarthy.jpg"
+                    style="width:100%" onclick="currentDiv(15)">
+                <img class="ImgThumbnail"
+                    src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/mellotronia-james-mccarthy.jpg"
+                    style="width:100%" onclick="currentDiv(16)">
+                <img class="ImgThumbnail"
+                    src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/sonntags-dream-james-mccarthy.jpg"
+                    style="width:100%" onclick="currentDiv(17)">
+            </div>
+        </div>
+        <div class="modal">
+            <span class="close">×</span>
+            <table>
+                <td><buttodn class="left btn" onclick="plusDivs(-1)">❮</button></td>
+                <td><img class="modalImage" id="img01" /></td>
+                <td><button class="right btn" onclick="plusDivs(1)">❯</button></td>
+            </table>
+        </div>
+
+    </div>
+    <div id="projectsa">
+        <p1>Project</p1>
+    </div>
+    <div id="contacta">
+        <form id="form" onsubmit="submitContactForm(); return false">
+            <h3>Contact Me Section</h3>
+            <label>Name</label>
+            <input type="text" id="response-name" placeholder="Full Name" required />
+            <label>Email</label>
+            <input type="email" id="email" placeholder="example@example.com" required />
+            <label>Message</label>
+            <textarea id="message" placeholder="Type your message here!" required></textarea>
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
