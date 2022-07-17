@@ -14,8 +14,23 @@
 
 //https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal_lightbox
 //https://www.w3schools.com/howto/howto_js_image_zoom.asp
+//https://www.youtube.com/watch?v=TawH-AqHTXc
+let bg = document.getElementById("bg");
+let topPart = document.getElementById("topPart");
+let middlePart = document.getElementById("middlePart");
+let bottomPart = document.getElementById("bottomPart");
+//
 var modalEle = document.querySelector(".modal");
 var modalImage = document.querySelector(".modalImage");
+
+window.addEventListener('scroll', function(){
+    var value = window.scrollY;
+    
+    bg.style.top;
+    topPart.style.top = value * 1 + 'px';
+    middlePart.style.top = value * 0.9 + 'px';
+    bottomPart.style.top = value * 0.5 + 'px';
+})
 
 Array.from(document.querySelectorAll(".ImgThumbnail")).forEach(item => {
    item.addEventListener("click", event => {
