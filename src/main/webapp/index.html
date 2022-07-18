@@ -16,6 +16,7 @@
     </section>
 
     <div id="mySidenav" class="sidenav">
+        
         <a href="#abouta" id="about">About</a>
         <a href="#gallerya" id="gallery">Gallery</a>
         <a href="#projectsa" id="projects">Projects</a>
@@ -23,35 +24,36 @@
     </div>
 
     <div id="abouta">
-        <div class="about-item">
-            <img src="https://images.fineartamerica.com/images/artistlogos/james-mccarthy-1397867296-square.jpg"
-                style="width:250px; height:250px;">
-            <div id="name"><h1>James McCarthy</h1></div>
-            <div id="logos">
-                <img src="imgs/tt-logo.png" class="logo">
-                <img src="imgs/fb-logo.png" class="logo">
-                <img src="imgs/ig-logo.png" class="logo">
+        <h1>About the Artist</h1>
+        <div id="about-container">
+            <div id="profile" class="about-item">
+                <img src="https://images.fineartamerica.com/images/artistlogos/james-mccarthy-1397867296-square.jpg"
+                    style="width:300px; height:300px;">
+                <h2 id="name">James McCarthy</h2>
+                <div id="logos">
+                    <img src="imgs/tt-logo.png" class="logo">
+                    <img src="imgs/fb-logo.png" class="logo">
+                    <img src="imgs/ig-logo.png" class="logo">
+                </div>
             </div>
-        </div>
-        <div id="text-container" class="about-item">
-            <div class="sentence">
+            <div id="text-container" class="about-item">
                 I am originally from Kalamazoo, Michigan. I was born in 1956. I was the first generation of TV kids. I liked
                 science
                 fiction and fantasy. I still do. I also liked to draw. I still do.
-            <br>
+                <br /><br />
                 Another thing they had in Michigan were seasons. I loved the seasons, especially the cold and weird beauty
                 of Winter.
-            <br>
+                <br /><br />
                 My family moved to Florida in 1965 where (aside from several trips to Michigan, Arkansas, Pennsylvania and
                 New England)
                 I have remained ever since. I miss the seasons, especially Winter snow.
-            </br>
+                <br /><br />
                 As a teenager I really grew to love music. Especially music that forms landscapes inside your head, such as
                 prog rock,
                 classical, medieval music and later in the '90's as an adult, new age music. Music is my primary source of
                 inspiration
                 when I conjure up ideas for my drawings and paintings.
-            <br>
+                <br /><br />
                 My theme is Surrealism and the Landscape. I like to create surreal biomorphic images but depicting the
                 landscape along
                 with the seasons is important to me as well.
@@ -60,7 +62,7 @@
     </div>
 
     <div id="gallerya">
-        <p1>Gallery</p1>
+        <h1>Gallery</h1>
         <div class="row">
             <div class="column">
                 <img class="ImgThumbnail"
@@ -136,8 +138,8 @@
         <p1>Project</p1>
     </div>
     <div id="contacta">
+        <h1>Contact Me</h1>
         <form id="form" onsubmit="submitContactForm(); return false">
-            <h3>Contact Me Section</h3>
             <label>Name</label>
             <input type="text" id="response-name" placeholder="Full Name" required />
             <label>Email</label>
