@@ -283,8 +283,7 @@ td {
 .modalImage {
     margin: auto;
     display: block;
-    width: 100%;    
-    position: relative;
+    width: 100%;
 
 }
 
@@ -335,4 +334,26 @@ td {
     to {
         transform: scale(1);
     }
+}
+* {box-sizing: border-box;}
+
+.img-magnifier-container {
+  position:relative;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 1px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 150px;
+  height: 150px;
+}
+.magBtn{
+  position: absolute;
+  top: 15px;
+  right: 1300px;
+  width: 50px;
+  height: 50px;
 }
