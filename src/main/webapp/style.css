@@ -1,7 +1,7 @@
 body {
     background-color: black;
     color: white;
-    font: Josefin Slab;
+    font-family: 'Josefin Slab', serif;
 }
 section{
     position: relative;
@@ -96,6 +96,7 @@ section img{
 
 #projectsa {
     position: relative;
+    height: 200px;
     left: 0px;
     top: 600px;
     font-size: 30px;
@@ -313,6 +314,32 @@ td {
     color: rgb(255, 0, 0);
     cursor: pointer;
 }
+/* Project/VR button*/
+
+/*https://codyhouse.co/nuggets/animated-button-gradients*/
+
+.anim-bg-gradient {
+    padding: 2em 5em;
+    border-radius: 5em;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(120deg, #04AA6D, #2196F3, #f44336);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position .5s;
+  }
+  
+  .anim-bg-gradient:hover {
+    background-position: 0 0;
+  }
+  .center-vr-button {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
 
 /* Animations */
 
