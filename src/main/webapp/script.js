@@ -138,7 +138,7 @@ var isMag = false;
 function mag(){
   if(isMag==false)
   {
-     magnify(4);
+     magnify(3);
      isMag=true;
      
   }
