@@ -49,9 +49,8 @@ public class ListTasksServlet extends HttpServlet {
       String name = entity.getString("name");
       String email = entity.getString("email");
       String message = entity.getString("message");
-      long timestamp = entity.getLong("timestamp");
 
-      Task task = new Task(id, name, email, message, timestamp);
+      Task task = new Task(id, name, email, message);
       tasks.add(task);
     }
 
