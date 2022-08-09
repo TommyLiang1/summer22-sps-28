@@ -69,16 +69,8 @@ function showDivs(n) {
     captionText.innerHTML = x[slideIndex-1].alt;
 }
 
-function submitContactForm() {
-    var name = document.getElementById("response-name").value;
-    var email = document.getElementById("email").value;
-    
-    alert("Hi " + name + ". Thank you for your message. A reply might be sent to " + email + ". In the meantime please feel free to check out the gallery and works of James McCarthy.");
-    
-    document.getElementById("response-name").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("message").value = "";
-}
+
+
 var img, glass, w, h, bw;
 function magnify(zoom) {
   img = modalImage;
@@ -149,3 +141,19 @@ function mag(){
   }
   
 }
+function loadTasks() {
+    fetch('/list-tasks').then(response => response.json()).then((tasks) => {
+      const taskListElement = document.getElementById('task-list');
+      tasks.forEach((task) => {
+        taskListElement.appendChild(createTaskElement(task));
+      })
+    });
+  }
+  document.getElementById('submit-button').onclick = function() {
+    var name = document.getElementById("response-name").value;
+    var email = document.getElementById("email").value;
+    
+    alert("Hi " + name + ". Thank you for your message. A reply might be sent to " + email + ". In the meantime please feel free to check out the gallery and works of James McCarthy.");
+
+};
+
