@@ -1,5 +1,3 @@
-![image]("https://github.com/TommyLiang1/Personal_Portfolio/blob/main/imgs/desc.JPG")
-
 An Art Gallery that hosts one particular artist.
 Gallery has VR and modal interactions.
 
